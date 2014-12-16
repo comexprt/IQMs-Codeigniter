@@ -1,0 +1,276 @@
+
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+/* Above line is to import google font style 
+	 John Noah G. Ompad
+	 September 05, 2014
+*/
+
+body {
+	
+
+}
+
+#outside-wrapper {
+	/*background-color: #ffffff;*/
+	width:1300px;	
+	 
+	margin-left:35px;
+	margin-top:65px;
+	
+     
+	/*height: 1000px;*/
+}
+#outside-wrapper1 {
+	/*background-color: #ffffff;*/
+	width:1300px;	
+	 
+	margin-left:35px;
+	margin-top:15px;
+	
+     
+	/*height: 1000px;*/
+}
+#wrapper2{
+    width:1200px;
+    padding: 20px;
+    height:400px;
+    float:center;
+    margin-top: 10px; 
+}
+#simioutside-wrapper {
+
+	width: 1266px;
+	
+	/*background-color: #f2f2f2;*/
+	background-color: white;
+    height:550px;
+
+	
+	border-radius:5px;
+	/*height: 1000px;*/
+}
+
+
+h2,p{
+text-align:center;
+/*font-family: 'Droid Serif', serif;*/
+}
+
+/*table*/
+.users {
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap;
+}
+.users1 {
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap;
+}
+.users td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+}
+
+.users1 td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+}
+
+/* Column widths are based on these cells */
+.a {
+  width: 3%;
+}
+
+.c{
+  width: 25%;
+  vertical-align:center;
+}
+.d{
+  width: 4%;
+}
+.e {
+  width: 7%;
+}
+.f {
+  width: 10%;
+}
+.g {
+  width: 12%;
+}
+.h{
+  width: 6%;
+}
+.i{
+  width: 6%;
+}
+.j{
+  width: 6%;
+}
+.k{
+  width: 1%;
+}
+.l{
+  width: 10%;
+}
+.m{
+  width: 10%;
+}
+.n{
+  width: 1%;
+}
+
+/*  ------------------------        input          --------------*/
+.ab{
+  width: 3%;
+}
+
+.cb{
+  width: 30%;
+}
+.cbn{
+  width: 3%;
+}
+.db{
+  width: 8%;
+}
+.eb{
+  width: 10%;
+}
+.fb {
+  width: 10%;
+}
+.gb {
+  width: 12%;
+}
+.hb{
+  width: 6%;
+}
+.ib{
+  width: 6%;
+}
+.jb{
+  width: 6%;
+}
+.kb{
+  width: 5;
+}
+.lb{
+  width: 5%;
+}
+.mb{
+  width: 5%;
+}
+.nb{
+  width: 5%;
+}
+/*List of project accomplishment*/
+.alpa {
+  width: 3%;
+}
+
+.clpa{
+  width: 25%;
+  vertical-align:center;
+}
+.dlpa{
+  width: 10%;
+}
+.elpa{
+  width: 10%;
+}
+.flpa{
+  width: 10%;
+  }
+  
+  /*view specific project accomplishment*/
+.vcbn{
+  width: 4%;
+}
+.vcb{
+  width: 27%;
+}
+
+.vdb{
+  width: 5%;
+}
+.veb{
+  width: 7%;
+}
+.vfb {
+  width: 9%;
+}
+.vgb {
+  width: 10%;
+}
+.vhb{
+  width: 6%;
+}
+
+.vkb{
+  width: 3%;
+}
+.vlb{
+  width: 12%;
+}
+.vmb{
+  width: 3%;
+}
+.vnb{
+  width: 12%;
+}
+
+/*table*/
+
+
+table {
+    width:100%;
+}
+table, th, td {
+   border:0.1em solid #B9B9C8;
+    border-collapse: collapse;
+}
+td {
+    padding: 2px;
+	font-size:20px;
+	font-weight:bold;
+	
+}
+.users1 th, td {
+    padding: 5px;
+	font-size:11px;
+	
+	
+}
+
+table#t01 tr:nth-child(even) {
+    background-color: #FFFFF2;
+}
+table#t01 tr:nth-child(odd) {
+   background-color:#EEEEEE;
+}	
+table#t01 th	{
+    background-color: #26C9FF;
+	text-align:center;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

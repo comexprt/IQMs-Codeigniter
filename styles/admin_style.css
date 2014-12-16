@@ -1,0 +1,121 @@
+/*
+Theme Name:     RCI Child Theme
+Description:    Child theme for the RCI Base "skeleton" theme. Put all client specific stuff here.
+Author:         Red Clay Interactive
+Author URI:     http: //www.redclayinteractive.com
+Template:       rcibase
+*/
+
+@import url("../rcibase/style.css");
+
+/* - SPECIAL
+=========================================================================*/
+/*
+	To use == border-radius / box-shadow / linear-gradient == attach == behavior:url(/PIE.htc) == to the end of your declaration
+	EXAMPLE: div { -moz-border-radius:5px 5px 10px 10px; -webkit-border-radius:5px 5px 10px 10px; border-radius:5px 5px 10px 10px; behavior:url(/PIE.htc) }
+	
+	For more examples and documentation:  http://css3pie.com/
+*/
+::selection { background: #006FBA; color: #fff  }
+
+/* - HEADER
+=========================================================================*/
+header { width:100%; height:60px; background: #212121 url(assets/images/header-bg.jpg) 50% 0 no-repeat; }
+body { font-family:"myriad-pro-n4", "myriad-pro" Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; font-smoothing: antialiased; }
+
+.clearBoth {
+	clear: both;
+}
+
+/* -- Header Navigation ----- */
+.nav-header, .nav-header ul, .nav-header li, .nav-header a { float:right; possition:relative;  }
+.nav-header { background: #212121; margin:auto; width: 100% }
+
+/*.nav-header li { padding:0 5px }*/
+.nav-header li a { border-left: 1px solid #4D4D4D;  padding: 10px 30px; color: #fff; font:700 15px/24px "myriad-pro-n6", "myriad-pro", Helvetica, Arial, sans-serif; }
+.nav-header li.highlight a{background: #4cb11d; /* Old browsers */
+background: -moz-linear-gradient(top,  #4cb11d 0%, #2a950d 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4cb11d), color-stop(100%,#2a950d)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #4cb11d 0%,#2a950d 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #4cb11d 0%,#2a950d 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #4cb11d 0%,#2a950d 100%); /* IE10+ */
+background: linear-gradient(top,  #4cb11d 0%,#2a950d 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4cb11d', endColorstr='#2a950d',GradientType=0 ); /* IE6-9 */
+}
+.nav-header li.highlight a:hover{background: #2a950d; /* Old browsers */
+background: -moz-linear-gradient(top,  #2a950d 0%, #4cb11d 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2a950d), color-stop(100%,#4cb11d)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #2a950d 0%,#4cb11d 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #2a950d 0%,#4cb11d 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #2a950d 0%,#4cb11d 100%); /* IE10+ */
+background: linear-gradient(top,  #2a950d 0%,#4cb11d 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a950d', endColorstr='#4cb11d',GradientType=0 ); /* IE6-9 */
+}
+
+
+/* - WRAPPERS
+=========================================================================*/
+.wrap { z-index: 1000 }
+.wrap, #content { width:1050px; display: block; position: relative; }
+
+/* - CONTENT (internal)
+=========================================================================*/
+#side-column { float: left; margin: 20px 60px 0 0; }
+#content-wrapper {float: left; width:750px;}
+.full-page #content-wrapper { width: 100% }
+#content #content-wrapper h1 { font:400 44px "myriad-pro-n4", "myriad-pro", Helvetica, Arial, sans-serif; border-bottom: 1px solid #DDD; padding: 0 0 30px 0;  margin: 0 0 30px 0 }
+#content #content-wrapper h2 { color: #006fba; font:700 20px "myriad-pro-n7", "myriad-pro", Helvetica, Arial, sans-serif; text-align: center }
+#content #content-wrapper h3 { color: #212121; text-align:left !important; font:600 22px/28px "myriad-pro-n6", "myriad-pro", Helvetica, Arial, sans-serif; }
+#content #content-wrapper p, #content #content-wrapper li { font:400 17px "myriad-pro-n4", "myriad-pro", Helvetica, Arial, sans-serif; line-height: 140%; margin: 0 0 15px 0 }
+#content #content-wrapper li {  }
+#content #content-wrapper blockquote { margin:0 }
+#content #content-wrapper blockquote p { font-size: 24px; line-height: 140%; }
+#content .side-nav { padding: 0 !important; margin-left: 20px; float: left; width: 200px; border: 1px solid #DDD; box-shadow:0px 2px 3px #DFDFDF;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	behavior:url(/PIE.htc); padding:5px 4px; }
+#content .side-nav li {list-style-type: none; border-top: 1px solid #DDD ; }
+#content .side-nav li:first-child { border:none }
+#content .side-nav li a {padding: 12px 20px; font:700 15px "myriad-pro-n4", "myriad-pro", Helvetica, Arial, sans-serif; display: block; background: #F4F4F4; position: relative; line-height: 25px ; text-decoration:none;}
+#content .side-nav li.current_page_item a, #content .side-nav li a:hover { color: #006FBA; background: #fff url(assets/images/bg-arrow.png) no-repeat 190px;}
+#content .side-nav li a:visited { color: #006FBA; }
+#content .side-nav li a:hover { color:#4db21d  }
+#content .side-nav li:hover a:before, #content .side-nav li.current_page_item a:before { content: ""; position: absolute; top: 0; right: -20px; width: 0; height: 0; border-color: transparent transparent transparent #ddd; border-style: solid; border-width: 25px 4px 24px 15px;  }  
+#content .side-nav li:hover a:after, #content .side-nav li.current_page_item a:after { content: ""; position: absolute; top: 0; right: -19px; width: 0; height: 0; border-color: transparent transparent transparent #fff; border-style: solid; border-width: 25px 4px 24px 15px; }  
+#content .side-nav .page-item-263:hover a:before, #content .side-nav .page-item-263.current_page_item a:before, #content .side-nav .page-item-262:hover a:before, #content .side-nav .page-item-262.current_page_item a:before, #content .side-nav .page-item-260:hover a:before, #content .side-nav .page-item-260.current_page_item a:before { content: ""; position: absolute; top: 0; right: -20px; width: 0; height: 0; border-color: transparent transparent transparent #ddd; border-style: solid; border-width: 37px 4px 36px 15px; }  
+#content .side-nav .page-item-263:hover a:after, #content .side-nav .page-item-263.current_page_item a:after, #content .side-nav .page-item-262:hover a:after, #content .side-nav .page-item-262.current_page_item a:after, #content .side-nav .page-item-260:hover a:after, #content .side-nav .page-item-260.current_page_item a:after { content: ""; position: absolute; top: 0; right: -19px; width: 0; height: 0; border-color: transparent transparent transparent #fff; border-style: solid; border-width: 37px 4px 36px 15px; }  
+#content .pagenav ul{padding: 0;}
+li.bulb, li.pig, li.upchart, li.thought, li.gears, li.growchart, li.magnify, li.synergy, li.chart, li.getinto, li.smashingarrows, li.growup, li.bigdata, li.ontheclock, li.thecloud, li.docs, li.growdown, li.check, li.endtag, li.database, li.ontime, li.magic, li.crosshair, li.backandforth, li.people, li.chartplain{ list-style-type: none }
+#content ul.img {list-style: none; padding: 0 !important; margin: 0 !important }
+#content ul.img li {float: left; border: 1px solid #e8e8e8; margin-left:6px; padding:5px; text-align: center; width:auto; height:100px; }
+#content .img a:hover img{border: 2px double #0000ff; }
+#Delete_button a {
+
+	text-decoration:none;
+	color: blue;
+}
+
+.delete{
+    
+	 margin-top: 10px;
+	 padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 19px;
+    background: linear-gradient(#22abe9 5%, #36caf0 100%);
+    border: 1px solid #0F799E;
+	text-align: center;
+  
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 0px 1px 0px #13506D;
+}
+
+.delete:hover {
+	 background: linear-gradient(#36caf0 5%, #22abe9 100%);
+}
+
+
+
+
